@@ -19,3 +19,14 @@ Open http://localhost:8765
    `https://fastcorr-pty-ltd.github.io/fastcorr-website/`
 
 If you later add a custom domain (e.g. `www.fastcorr.co.za`), set it under **Pages → Custom domain**.
+
+## Pages
+
+| Page | Path |
+|------|------|
+| Home | `index.html` |
+| Refund Policy | `refund-policy.html` |
+
+Live refund policy URL (GitHub Pages):
+`https://fastcorr-pty-ltd.github.io/fastcorr-website/refund-policy.html`
+

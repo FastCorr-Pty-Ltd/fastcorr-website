@@ -866,3 +866,196 @@ p:last-child {
     transform: none;
   }
 }
+
+
+/* Policy / legal subpages */
+.policy-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 3.5rem 1.5rem 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.policy-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(64, 95, 150, 0.1) 0%, transparent 50%),
+    linear-gradient(320deg, rgba(155, 64, 85, 0.06) 0%, transparent 40%),
+    repeating-linear-gradient(
+      -18deg,
+      transparent,
+      transparent 48px,
+      rgba(64, 95, 150, 0.03) 48px,
+      rgba(64, 95, 150, 0.03) 49px
+    );
+  pointer-events: none;
+}
+
+.policy-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.policy-eyebrow {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  margin-bottom: 0.85rem;
+}
+
+.policy-eyebrow a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.policy-hero h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  max-width: 18ch;
+  margin-bottom: 0.75rem;
+}
+
+.policy-hero .lede {
+  max-width: 42rem;
+  color: var(--ink-muted);
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.policy-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--blue-soft);
+  font-weight: 500;
+}
+
+.policy-doc {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  max-width: 46rem;
+}
+
+.policy-block {
+  margin-bottom: 2.75rem;
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+}
+
+.policy-block h2 {
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+  color: var(--blue-deep);
+  margin-bottom: 0.85rem;
+}
+
+.policy-block h3 {
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-top: 1.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.policy-block p,
+.policy-block li {
+  color: var(--ink-muted);
+}
+
+.policy-block a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.policy-block ul,
+.policy-block ol {
+  margin: 0 0 1em;
+  padding-left: 1.25rem;
+}
+
+.policy-block li {
+  margin-bottom: 0.4rem;
+}
+
+.policy-block li::marker {
+  color: var(--teal);
+}
+
+.policy-table-wrap {
+  overflow-x: auto;
+  margin: 1.1rem 0 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.policy-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  min-width: 28rem;
+}
+
+.policy-doc th,
+.policy-doc td {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+
+.policy-doc th {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: -0.01em;
+  color: var(--blue-deep);
+  background: rgba(64, 95, 150, 0.06);
+}
+
+.policy-doc tr:last-child td {
+  border-bottom: none;
+}
+
+.policy-doc td {
+  color: var(--ink-muted);
+}
+
+.policy-doc td strong {
+  color: var(--ink);
+}
+
+.policy-footnote {
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.55rem;
+  align-items: center;
+}
+
+.footer-links a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .policy-hero {
+    padding-top: 2.25rem;
+  }
+
+  .policy-doc {
+    padding-top: 1.75rem;
+  }
+}
